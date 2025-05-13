@@ -1,4 +1,4 @@
-# 🐳 Dockerized Multi-Tor Proxy Suite  
+# 🐳 Multi-Tor Proxy Hosting with Docker Compose  
 *A scalable, containerized solution for hosting multiple isolated Tor proxy instances*  
 
 ---
@@ -49,18 +49,18 @@ Ideal for developers, ethical hackers, and privacy advocates requiring distribut
 ### Installation  
 1. Clone the repository:  
    ```bash  
-   git clone https://github.com/your-username/multi-tor-proxy.git  
-   cd multi-tor-proxy  
+   git clone https://github.com/Farhad-Sami/Multi-Tor-Proxy-Hosting-with-Docker-Compose.git  
+   cd Multi-Tor-Proxy-Hosting-with-Docker-Compose  
    ```  
 
 2. Launch the services:  
    ```bash  
-   docker-compose up -d  
+   docker compose up -d  
    ```  
 
 3. Verify containers are running:  
    ```bash  
-   docker-compose ps  
+   docker compose ps  
    ```  
 
 ---
@@ -75,7 +75,7 @@ Configure applications to use Tor proxies via their respective ports. For exampl
 - **Browser Configuration**: Set SOCKS5 proxy to `localhost:9051`, `localhost:9052`, etc.  
 
 ### Adding More Proxies  
-Edit `docker-compose.yml` to extend the fleet:  
+Edit `compose.yml` to extend the fleet:  
 ```yaml  
 tor11:  
   image: dperson/torproxy:latest  
@@ -164,13 +164,13 @@ const agent = new SocksProxyAgent({
 
 ### Stopping Services  
 ```bash  
-docker-compose down  
+docker compose down  
 ```  
 
 ### Logs & Monitoring  
 View logs for a specific proxy:  
 ```bash  
-docker-compose logs -f tor1  
+docker compose logs -f tor1  
 ```  
 
 ---
@@ -197,3 +197,16 @@ See [LICENSE](LICENSE) for details.
 
 ---  
 *Built with ❤️ for privacy, scalability, and simplicity.*  
+
+---
+
+### 📁 Folder Structure  
+```
+Multi-Tor-Proxy-Hosting-with-Docker-Compose/  
+├── compose.yml  
+├── README.md  
+└── LICENSE  
+```  
+
+### 🌐 Repository  
+[GitHub Link](https://github.com/Farhad-Sami/Multi-Tor-Proxy-Hosting-with-Docker-Compose)  
